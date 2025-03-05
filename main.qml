@@ -1,6 +1,6 @@
 import QtQuick
 
-ApplicationWindow {
+Window {
     visible: true
     width: 800
     height: 600
