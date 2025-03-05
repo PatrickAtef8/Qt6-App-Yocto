@@ -1,16 +1,16 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include "../inc/controller.h"
+#include "../inc/controller.h"  
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    Controller controller;
-    engine.rootContext()->setContextProperty("controller", &controller);
+    Controller controller;  
+    engine.rootContext()->setContextProperty("controller", &controller);  // Expose Controller to QML
 
-    engine.load(QUrl("qrc:/main.qml"));  
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     if (engine.rootObjects().isEmpty())
         return -1;
