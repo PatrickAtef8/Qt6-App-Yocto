@@ -3,7 +3,7 @@
 #include <QFile>
 #include <QTextStream>
 
-#define GPIO_PIN "529"  // Update this to the actual GPIO number
+#define GPIO_PIN "17"  // Update this to the actual GPIO number
 
 Controller::Controller(QObject *parent) : QObject(parent) {
     // Set GPIO path dynamically
